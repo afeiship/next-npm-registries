@@ -13,12 +13,10 @@
   };
 
   nx.npmRegistries = function (inRole) {
-    var value = NPM_REGISTIES.hooks[inRole] || NPM_REGISTIES.default[inRole];
+    var install = NPM_REGISTIES.default[inRole];
+    var publish = NPM_REGISTIES.hooks[inRole] || install;
 
-    return {
-      publish: value,
-      install: NPM_REGISTIES.default[inRole]
-    }
+    return { publish: publish, install: install };
   };
 
   if (typeof module !== 'undefined' && module.exports) {
