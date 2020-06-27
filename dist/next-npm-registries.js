@@ -2,8 +2,8 @@
  * name: @afeiship/next-npm-registries
  * description: Npm reigistries for aric.
  * homepage: https://github.com/afeiship/next-npm-registries
- * version: 1.0.2
- * date: 2020-06-23T12:36:37.658Z
+ * version: 1.1.0
+ * date: 2020-06-27T15:35:52.418Z
  * license: MIT
  */
 
@@ -25,7 +25,7 @@
     var install = NPM_REGISTIES.default[inRole];
     var publish = NPM_REGISTIES.hooks[inRole] || install;
 
-    return { publish: publish, install: install };
+    return { publish: publish, install: install, private: inRole !== 'npm' };
   };
 
   if (typeof module !== 'undefined' && module.exports) {

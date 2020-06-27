@@ -16,7 +16,7 @@
     var install = NPM_REGISTIES.default[inRole];
     var publish = NPM_REGISTIES.hooks[inRole] || install;
 
-    return { publish: publish, install: install };
+    return { publish: publish, install: install, private: inRole !== 'npm' };
   };
 
   if (typeof module !== 'undefined' && module.exports) {
