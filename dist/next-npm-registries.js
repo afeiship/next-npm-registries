@@ -1,9 +1,9 @@
 /*!
- * name: @afeiship/next-npm-registries
+ * name: @feizheng/next-npm-registries
  * description: Npm reigistries for aric.
  * homepage: https://github.com/afeiship/next-npm-registries
- * version: 1.1.0
- * date: 2020-06-27T15:35:52.418Z
+ * version: 1.0.0
+ * date: 2020-07-25T11:19:31.912Z
  * license: MIT
  */
 
@@ -32,5 +32,3 @@
     module.exports = nx.npmRegistries;
   }
 })();
-
-//# sourceMappingURL=next-npm-registries.js.map

@@ -3,12 +3,12 @@
 
 ## installation
 ```bash
-npm install -S @afeiship/next-npm-registries
+npm install -S @feizheng/next-npm-registries
 ```
 
 ## usage
 ```js
-import '@afeiship/next-npm-registries';
+import '@feizheng/next-npm-registries';
 
 
 nx.npmRegisties('alo7');

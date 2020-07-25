@@ -1,6 +1,6 @@
 {
-  "name": "@afeiship/next-npm-registries",
-  "version": "1.1.0",
+  "name": "@feizheng/next-npm-registries",
+  "version": "1.0.0",
   "description": "Npm reigistries for aric.",
   "homepage": "https://github.com/afeiship/next-npm-registries",
   "author": {
@@ -35,6 +35,6 @@
     "yargs": "^15.3.1"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   }
 }
