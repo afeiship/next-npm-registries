@@ -2,8 +2,8 @@
  * name: @feizheng/next-npm-registries
  * description: Npm reigistries for aric.
  * homepage: https://github.com/afeiship/next-npm-registries
- * version: 1.0.0
- * date: 2020-07-25T11:19:31.912Z
+ * version: 1.0.1
+ * date: 2020-08-06T13:44:35.994Z
  * license: MIT
  */
 
@@ -14,7 +14,8 @@
     default: {
       npm: 'https://registry.npmjs.org',
       github: 'https://npm.pkg.github.com',
-      alo7: 'https://repos.saybot.net/repository/alo7npm/'
+      alo7: 'https://repos.saybot.net/repository/alo7npm/',
+      null: 'DO_NOT_PUBILSH_TO_ANY_WHERE'
     },
     hooks: {
       alo7: 'https://repos.saybot.net/repository/alo7-private-npm/'

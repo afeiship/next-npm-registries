@@ -5,7 +5,8 @@
     default: {
       npm: 'https://registry.npmjs.org',
       github: 'https://npm.pkg.github.com',
-      alo7: 'https://repos.saybot.net/repository/alo7npm/'
+      alo7: 'https://repos.saybot.net/repository/alo7npm/',
+      null: 'DO_NOT_PUBILSH_TO_ANY_WHERE'
     },
     hooks: {
       alo7: 'https://repos.saybot.net/repository/alo7-private-npm/'
