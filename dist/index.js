@@ -1,15 +1,15 @@
 /*!
- * name: @feizheng/next-npm-registries
+ * name: @jswork/next-npm-registries
  * description: Npm reigistries for aric.
  * homepage: https://github.com/afeiship/next-npm-registries
- * version: 1.0.1
- * date: 2020-08-06T13:44:35.994Z
+ * version: 1.0.0
+ * date: 2020-11-14T08:13:25.116Z
  * license: MIT
  */
 
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var NPM_REGISTIES = {
     default: {
       npm: 'https://registry.npmjs.org',

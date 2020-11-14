@@ -1,6 +1,6 @@
 {
-  "name": "@feizheng/next-npm-registries",
-  "version": "1.0.1",
+  "name": "@jswork/next-npm-registries",
+  "version": "1.0.0",
   "description": "Npm reigistries for aric.",
   "homepage": "https://github.com/afeiship/next-npm-registries",
   "author": {
@@ -10,13 +10,13 @@
   "scripts": {
     "build": "gulp",
     "test": "jest",
-    "start": "node ./express.js"
+    "release": "release-it"
   },
-  "main": "dist/next-npm-registries.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
-    "@feizheng/gulp-pkg-header": "^1.0.4",
-    "@feizheng/rake-git": "^1.2.1",
+    "@jswork/gulp-pkg-header": "^1.0.1",
+    "@jswork/next": "^1.0.0",
     "del": "^5.1.0",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
@@ -30,11 +30,13 @@
     "gulp-uglify": "^3.0.2",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
-    "uglify-save-license": "^0.4.1",
+    "release-it": "^14.2.1",
     "uglify-js": "3.9.4",
+    "uglify-save-license": "^0.4.1",
     "yargs": "^15.3.1"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   }
 }

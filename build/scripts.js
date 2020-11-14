@@ -4,13 +4,13 @@
   const gulp = require('gulp');
   const saveLicense = require('uglify-save-license');
   const $ = require('gulp-load-plugins')({
-    pattern: ['gulp-*', 'gulp.*', 'del', '@feizheng/gulp-*']
+    pattern: ['gulp-*', 'gulp.*', 'del', '@jswork/gulp-*']
   });
 
   gulp.task('scripts', function() {
     return gulp
       .src('src/*.js')
-      .pipe($.feizheng.pkgHeader())
+      .pipe($.jswork.pkgHeader())
       .pipe(gulp.dest('dist'))
       .pipe($.uglify({ output: { comments: saveLicense } }))
       .pipe($.rename({ extname: '.min.js' }))

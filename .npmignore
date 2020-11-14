@@ -21,3 +21,4 @@ express.js
 
 # vscode localhistory
 .history
+.release-it.json
