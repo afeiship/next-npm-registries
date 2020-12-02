@@ -20,11 +20,12 @@ nx.npmRegisties('npm');
 // nx.npmRegisties('npm');
 // nx.npmRegisties('github');
 
-// resutls
+// results
 {
   publish: 'https://registry.npmjs.org',
   install: 'https://registry.npmjs.org',
-  private: false
+  private: false,
+  access: 'restricted'
 }
 ```
 

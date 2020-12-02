@@ -9,13 +9,15 @@
       expect(res1).toEqual({
         publish: 'https://registry.npmjs.org',
         install: 'https://registry.npmjs.org',
-        private: false
+        private: false,
+        access: 'public'
       });
 
       expect(res2).toEqual({
         publish: 'https://npm.pkg.github.com',
         install: 'https://npm.pkg.github.com',
-        private: true
+        private: true,
+        access: 'restricted'
       });
     });
 
@@ -25,7 +27,8 @@
       expect(res).toEqual({
         publish: 'https://repos.saybot.net/repository/alo7-private-npm/',
         install: 'https://repos.saybot.net/repository/alo7npm/',
-        private: true
+        private: true,
+        access: 'restricted'
       });
     });
 
@@ -35,7 +38,8 @@
       expect(res).toEqual({
         publish: 'DO_NOT_PUBILSH_TO_ANY_WHERE',
         install: 'DO_NOT_PUBILSH_TO_ANY_WHERE',
-        private: true
+        private: true,
+        access: 'restricted'
       });
     });
   });

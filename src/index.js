@@ -1,6 +1,7 @@
 (function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@jswork/next');
+  var ACCESS_LIST = ['public', 'restricted'];
   var NPM_REGISTIES = {
     default: {
       npm: 'https://registry.npmjs.org',
@@ -16,8 +17,14 @@
   nx.npmRegistries = function (inRole) {
     var install = NPM_REGISTIES.default[inRole];
     var publish = NPM_REGISTIES.hooks[inRole] || install;
+    var isPrivate = inRole !== 'npm';
 
-    return { publish: publish, install: install, private: inRole !== 'npm' };
+    return {
+      publish: publish,
+      install: install,
+      private: isPrivate,
+      access: ACCESS_LIST[+isPrivate]
+    };
   };
 
   if (typeof module !== 'undefined' && module.exports) {
